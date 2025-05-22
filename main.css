@@ -1,0 +1,290 @@
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+ body {
+    /* background-image: url(img/-background-image-particle-strokes.svg); */
+    background-size: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    margin: 0;  
+  
+} 
+
+
+
+
+
+#homePage{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 15em;
+
+    /* border: 5px solid red; */
+}
+
+
+div h1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+section > header {
+    display: flex;
+    width: auto;
+    box-sizing: border-box;
+    margin: auto;
+    padding-left: 1.4em;
+    justify-content: center; 
+}
+
+
+
+#projectPage{
+    /* border: 5px solid orange; */
+    padding: 2em;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ********************* */
+
+
+.accordion{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+
+    background-color:rgba(245, 245, 245, 0.11);
+    color: whitesmoke;
+    cursor: pointer;
+    text-align: left;
+    padding: 1em;
+    width: 100%;
+    margin: 0.25em;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+
+.project{
+    display: flex;
+    padding: 0em;
+    background-color: rgba(255, 255, 255, 0);
+    max-height: 0em;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+
+/* ************************* */
+
+section > p {
+    display: flex;
+    justify-content: center;
+    /* background-color: red;   */
+    padding: 20px;
+    width: auto;
+    margin: auto; 
+    box-sizing: border-box; 
+    text-align: left; 
+    width: 100%; 
+    overflow-wrap: break-word; 
+    /* overflow: scroll; */
+}
+
+
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #3333332f; 
+    padding: 20px;
+    width: auto;
+    height: auto; 
+    box-sizing: border-box;
+}
+
+
+aside img{
+    height: auto;
+    width: 18rem;
+}
+
+/* ********************** */
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    /* Debugging */
+    /* border: 2px solid green;  */
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    height: auto;
+    padding: 0em;
+
+    /* Debugging */
+    /* border: 2px solid blue; */
+}
+
+
+nav li {
+    display: flex; 
+    margin: 1.5em;
+    justify-content: center; 
+    align-items: center;
+
+    /* Debugging */
+    /* border: 2px solid pink; */
+}
+
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s ease;
+
+    /* Debugging */
+    /* border: 2px solid gold; */
+}
+
+/* ********************** */
+
+p {
+    font-size: 14px;
+}
+
+/* ********************** */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: auto;
+    height: auto; 
+}
+
+
+.footerLogo {
+    height: 2.5em;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+
+
+/* ********************************* */
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.skills-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 1em;
+    justify-content: center;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    background-color: rgba(128, 128, 128, 0.158);
+    border-radius: 1em;
+    width: 7.2em;
+    height: 2.6em;
+}
+
+.skills img{
+    width: 1.25em; 
+    height: auto; 
+}
+
+div > p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 14px; 
+}
+
+/* ********************************* */
+
+#contactPage{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 15em;
+
+
+    /* border: 2px solid rebeccapurple; */
+}
+
+summary {
+    font-size: 25px;
+    text-align: center;
+}
+
+.formSection{
+    display: flex ;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#contactContainer{
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    height: 20em;
+    background-color:rgba(128, 128, 128, 0.158);
+    border-radius: 1em;
+}
+
+#message{
+    width: 100%;
+    height: 5em;
+}
+
+button{
+    display: block;
+    margin: auto;
+}

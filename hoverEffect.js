@@ -1,0 +1,56 @@
+
+var boxSkills = document.querySelectorAll(".skills");
+var logo = document.querySelectorAll(".footerLogo");
+var navigation = document.querySelectorAll(".navigation");
+var projectTitle = document.querySelectorAll(".accordion");
+
+for(var i = 0; i < boxSkills.length; i++){
+    boxSkills[i].addEventListener("mouseover", function(){
+        this.style.height = '3.2em';
+        this.style.width = '8.2em';
+        this.style.transition = "0.25s";
+    
+    })
+
+    boxSkills[i].addEventListener('mouseout', function(){
+        this.style.height = '2.6em';
+        this.style.width = '7.2em';
+    })
+}
+
+
+for(var f = 0; f < logo.length; f++){
+    logo[f].addEventListener("mouseover", function(){
+        this.style.height = '2.9em';
+    })
+
+    logo[f].addEventListener("mouseout", function(){
+        this.style.height = "2.5em"
+    })
+}
+
+
+for(var n = 0; n < navigation.length; n++){
+    navigation[n].addEventListener("mouseover",function(){
+        this.style.textDecoration = "underline"
+        this.style.textDecorationThickness = "2px"
+        this.style.fontSize = "1.2em"
+    })
+
+    navigation[n].addEventListener("mouseout", function(){
+        this.style.textDecoration = "none"
+        this.style.fontSize = "1em"
+
+    })
+}
+
+
+for(var t = 0; t < projectTitle.length; t++){
+    projectTitle[t].addEventListener("mouseover", function(){
+        this.style.fontSize = "20px";
+    })
+
+    projectTitle[t].addEventListener("mouseout", function(){
+        this.style.fontSize = "15px";
+    })
+}

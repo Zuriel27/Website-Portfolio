@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuriel's Portfolio </title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<div></div>
+    <nav>
+        <ul>
+            <li><a class="navigation" href="#homePage">Home</a></li>
+            <li><a class="navigation" href="#projectPage"> Projects</a></li>
+            <li><a class="navigation" href="#contactPage">Contact Me</a></li>
+        </ul>
+    </nav>
+
+
+<section id="homePage" >
+    
+    <div>
+    <h1 id = "headerText"></h1>
+    <p id ="typeWriter"></p>
+    </div>
+    <script src="typeWriter.js"></script>
+
+
+
+    <footer>
+        <a href="projects/Zuriel Gonzalez Resume.pdf" download>
+            <img src="img/resume.png" alt="Resume-Logo" class="footerLogo">
+        </a>
+
+        <a href="https://github.com/Zuriel27" target ="_blank">
+            <img src="img/github.png" alt="GitHub-Logo" class="footerLogo">
+        </a>
+
+        <a href="https://www.linkedin.com/in/zurielgonzalez/" target="_blank"> 
+            <img src="img/linkedin.png" alt="LinkedIn-Logo" class="footerLogo">
+        </a>
+
+        <a href="https://www.rainforest-alliance.org/everyday-actions/what-kind-of-frog-are-you/?device=c&creative=716834625520&network=g&gbraid=0AAAAAD11JQZJQFSWRnVJWq2xAvKFsYlAe&keyword=frogs%20frogs&matchtype=b&gad_source=1" target="_blank"> <img src="img/frog.png" alt="KindFrog-Logo" class="footerLogo">
+        </a>
+
+    </footer>
+</section>
+
+
+
+<section id = "projectPage">
+    <header>
+        <h1>Projects</h1>
+    </header>
+
+    <button class="accordion">First Webpage</button>
+    <div class="project">
+    <section>
+        <p>The reason I got interested in HTML was due to a previous website I made for a scholarship. It was my first ever website I created and enjoyed making the website. Although the website is not the best, I am still proud of writing the HTML for it. I learned HTML and CSS in a couple of days and made the website, it is super basic and it doesn't really work on mobile devices. The website was my introduction to HTML, CSS, and a little bit of JavaScript. I plan on updating the website in the future, and for sure improve the design of the website. You can scan or click on the QR code to visit the website. </p>
+    </section>
+
+    <aside>
+        <a href="https://taiwanexperience.netlify.app/" target="_blank">
+        <img src="img/qrcode_taiwanexperience.png" alt="QRCODE">
+        </a>
+    </aside>
+    </div>
+
+
+    <button class="accordion">Evaluating A Large Language Model</button>
+    <div class="project">
+        <section>
+            <p>For this project, I explored the perfomance of a large language model (LLM) when tasked with answering questions over real-world tabular data using the DataBench benckmark, a benchmark composed of 65 real-world datasets over several domains, including 20 human-generated questions per dataset, totaling 1300 questions and answers overall. My researched was focused on the ChatGPT 4o-mini model and the results shows an improvement in LLM models compared to previous LLM models.  </p>
+        </section>
+
+        <aside>
+            <a href="projects/Project_4_Report.pdf" download>
+                <img src="img/file.png" alt="fileImg">
+            </a>
+            </aside>
+    </div>
+
+
+    <div class="container">
+        <h5>Technical Skills and Tools</h5>
+
+        <div class="skills-container">
+
+            <div class="skills">
+                <p>Python</p>
+                <img src="img/python.png" alt="PythonLogo">
+            </div>
+
+            <div class="skills">
+                <p>Java</p>
+                <img src="img/java-logo.png" alt="JavaLogo">
+            </div>
+
+            <div class="skills">
+                <p>HTLM</p>
+                <img src="img/html-logo.png" alt="htmlLogo">
+            </div>
+
+            <div class="skills">
+                <p>CSS</p>
+                <img src="img/css-3.png" alt="CSSLogo">
+            </div>
+
+            <div class="skills">
+                <p>JavaScript</p>
+                <img src="img/js.png" alt="JavaScriptLogo">
+            </div>
+
+            <div class="skills">
+                <p>SQL</p>
+                <img src="img/sql-server.png" alt="SQLLogo">
+            </div>
+
+
+        </div>
+    </div>
+
+
+</section>
+
+
+<section id="contactPage">
+
+    <h3>Interested in talking to me?</h3>
+    <p>Send me a message </p>
+
+    <div id="contactContainer">
+    <form action="">
+        <div class="formSection">
+            <label for="name">Name</label>
+            <input type="text">
+        </div>
+
+        <div class="formSection">
+            <label for="email">Email</label>
+            <input type="email">
+        </div>
+
+        <div class="formSection">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+
+        <div class="form">
+        <button type = "submit">Send Message</button>
+        </div>
+
+    </form>
+    </div>
+
+</section>
+
+
+<script src="accordionCollapsible.js"></script>
+<script src="hoverEffect.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+
+
+<script>
+VANTA.CELLS({
+  el: "body",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 2500.00,
+//   minWidth: 300.00,
+  scale: 1.00,
+  color1: 0x0,
+  color2: 0x691c1c,
+  size: 2.00,
+  speed: 1.25
+})
+</script>
+
+
+
+</body>
+</html>
