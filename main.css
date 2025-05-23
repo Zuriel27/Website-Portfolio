@@ -127,8 +127,9 @@ aside {
 
 
 aside img{
-    height: auto;
-    width: 18rem;
+    height: 100%;
+    width: 5.5em;
+    display: block;
 }
 
 /* ********************** */
