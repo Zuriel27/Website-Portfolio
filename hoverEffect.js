@@ -3,6 +3,7 @@ var boxSkills = document.querySelectorAll(".skills");
 var logo = document.querySelectorAll(".footerLogo");
 var navigation = document.querySelectorAll(".navigation");
 var projectTitle = document.querySelectorAll(".accordion");
+var buttonMessage = document.querySelectorAll(".contact-Form button");
 
 for(var i = 0; i < boxSkills.length; i++){
     boxSkills[i].addEventListener("mouseover", function(){
@@ -52,5 +53,19 @@ for(var t = 0; t < projectTitle.length; t++){
 
     projectTitle[t].addEventListener("mouseout", function(){
         this.style.fontSize = "15px";
+    })
+}
+
+for(var b = 0; b < buttonMessage.length; b++){
+    buttonMessage[b].addEventListener("mouseover", function(){
+        this.style.height = "2.3em";
+        this.style.width = "5.3em"
+        this.style.fontSize = "16px";
+    })
+    
+    buttonMessage[b].addEventListener("mouseout", function(){
+        this.style.height = "2em";
+        this.style.width = "5em";
+        this.style.fontSize = "14px";
     })
 }

@@ -69,8 +69,9 @@ section > header {
 .accordion{
     display: flex;
     justify-content: center; 
-    align-items: center;     
+    align-items: center;    
 
+    border-radius: 1em;
     background-color:rgba(245, 245, 245, 0.11);
     color: whitesmoke;
     cursor: pointer;
@@ -264,27 +265,63 @@ summary {
     text-align: center;
 }
 
-.formSection{
-    display: flex ;
-    flex-direction: column;
-    padding: 1em;
+
+
+
+/* ********************************* */
+
+.contact-container{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30em;
+    width: 25em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(128, 128, 128, 0.158);
 }
 
-#contactContainer{
+.contact-Form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+}
+
+.contact-Title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-input{
     width: 25em;
-    height: 20em;
-    background-color:rgba(128, 128, 128, 0.158);
+    height: 3em;
+    border: none;
+    outline: none;
+    padding-left: 1.5em;
+    border-radius: 1em;
+    background-color:#333333 ;
+    color: whitesmoke;
+}
+
+.contact-Form textarea{
+    height: 6em;
+    padding-top: 1em;
     border-radius: 1em;
 }
 
-#message{
-    width: 100%;
-    height: 5em;
-}
+.contact-Form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    background-color:#8b0000;
+    border: none;
+    border-radius: 1em;
+    height: 2em;
+    width: 5em;
+    transition: 0.3s;
 
-button{
-    display: block;
-    margin: auto;
 }

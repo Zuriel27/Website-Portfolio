@@ -121,37 +121,22 @@
         </div>
     </div>
 
-
 </section>
 
 
 <section id="contactPage">
 
-    <h3>Interested in talking to me?</h3>
-    <p>Send me a message </p>
-
-    <div id="contactContainer">
-    <form action="">
-        <div class="formSection">
-            <label for="name">Name</label>
-            <input type="text">
-        </div>
-
-        <div class="formSection">
-            <label for="email">Email</label>
-            <input type="email">
-        </div>
-
-        <div class="formSection">
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-        </div>
-
-        <div class="form">
-        <button type = "submit">Send Message</button>
-        </div>
-
-    </form>
+    <div class = "contact-container">
+        <form action="" class = "contact-Form">
+            <div class="contact-Title">
+                <h2>Interested in talking to me?</h2>
+                <h5>Send me a message</h5>
+            </div>
+            <input type="text" name="name" placeholder="Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Email" class="contact-input" required>
+            <textarea name="message" placeholder="Message" class="contact-input" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </div>
 
 </section>
