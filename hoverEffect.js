@@ -4,6 +4,7 @@ var logo = document.querySelectorAll(".footerLogo");
 var navigation = document.querySelectorAll(".navigation");
 var projectTitle = document.querySelectorAll(".accordion");
 var buttonMessage = document.querySelectorAll(".contact-Form button");
+var resumeButton = document.querySelectorAll("#resumeButton");
 
 for(var i = 0; i < boxSkills.length; i++){
     boxSkills[i].addEventListener("mouseover", function(){
@@ -41,7 +42,6 @@ for(var n = 0; n < navigation.length; n++){
     navigation[n].addEventListener("mouseout", function(){
         this.style.textDecoration = "none"
         this.style.fontSize = "1em"
-
     })
 }
 
@@ -67,5 +67,20 @@ for(var b = 0; b < buttonMessage.length; b++){
         this.style.height = "2em";
         this.style.width = "5em";
         this.style.fontSize = "14px";
+    })
+}
+
+
+for(var j = 0; j < resumeButton.length; j++){
+    resumeButton[j].addEventListener('mouseover',function(){
+        this.style.backgroundColor = "#8b0000";
+        this.style.boxShadow = "0px 0px 10px rgba(139, 0, 0, 0.5)";
+
+    })
+
+    resumeButton[j].addEventListener('mouseout', function(){
+        this.style.backgroundColor = "";
+        this.style.boxShadow = "none";
+
     })
 }
